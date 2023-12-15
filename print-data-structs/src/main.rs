@@ -1,30 +1,9 @@
 mod voperations;
 use voperations::vec_operations;
 fn main() {
+    vec_operations::print_collections();
     vec_operations::test_vect();
-}
-
-// create a function to containt all what main function contains
-fn print_collections() {
-    println!("Common Rust Collections:");
-
-    // Sequences
-    println!("\n\tSequences:");
-    println!("\t\tVec: https://doc.rust-lang.org/std/vec/struct.Vec.html");
-    println!("\t\tVecDeque: https://doc.rust-lang.org/std/collections/struct.VecDeque.html");
-    println!("\t\tLinkedList: https://doc.rust-lang.org/std/collections/struct.LinkedList.html");
-
-    // Maps
-    println!("\n\tMaps:");
-    println!("\t\tHashMap: https://doc.rust-lang.org/std/collections/struct.HashMap.html");
-    println!("\t\tBTreeMap: https://doc.rust-lang.org/std/collections/struct.BTreeMap.html");
-
-    // Sets
-    println!("\n\tSets:");
-    println!("\t\tHashSet: https://doc.rust-lang.org/std/collections/struct.HashSet.html");
-    println!("\t\tBTreeSet: https://doc.rust-lang.org/std/collections/struct.BTreeSet.html");
-
-    // Misc
-    println!("\n\tMisc:");
-    println!("\t\tBinaryHeap: https://doc.rust-lang.org/std/collections/struct.BinaryHeap.html");
+    vec_operations::test_retain();
+    vec_operations::test_keep();
+    vec_operations::test_retain_according_to_predicate();
 }
