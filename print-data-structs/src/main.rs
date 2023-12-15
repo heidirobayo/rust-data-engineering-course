@@ -1,4 +1,11 @@
+mod voperations;
+use voperations::vec_operations;
 fn main() {
+    vec_operations::test_vect();
+}
+
+// create a function to containt all what main function contains
+fn print_collections() {
     println!("Common Rust Collections:");
 
     // Sequences
