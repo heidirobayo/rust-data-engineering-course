@@ -27,14 +27,16 @@
 				"files.watcherExclude": {
 					"**/target/**": true
 				},
-				"rust-analyzer.checkOnSave.command": "clippy"
+				"rust-analyzer.checkOnSave.command": "clippy",
+				"rust-analyzer.cargo.autoreload": true
 			},
 			
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
 				"rust-lang.rust-analyzer",
 				"GitHub.copilot-nightly",
-				"GitHub.copilot-labs"
+				"GitHub.copilot-labs",
+				"GitHub.copilot"
 			]
 		}
 	},
